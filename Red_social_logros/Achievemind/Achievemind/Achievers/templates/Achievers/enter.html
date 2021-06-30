@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Achievemind | Registrarse</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/enterStyle.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<section class="Home">
+		<div class="margin">
+			<div class="border">
+				<div id="header">
+					<h1><img class="logo" src="{% static 'img/AchievemindLogo.png' %}"/>Achievemind</h1>
+					<div class="air50"></div>
+				</div>
+				<div class="padding">
+					<div class="">
+						<h2>Achievemind es el lugar ideal para compartir todos los logros que vos quieras, con todos los que quieras.</h2>
+				</div>
+				<div class="air50"></div>
+				<div class="padding">
+					<div class="login">
+						<h3>Iniciar sesión</h3>
+						<div class="contnent">
+							<form class="logCore" method="POST">
+								{{ form.as_p }}
+								{% csrf_token %}
+								<button type="submit">Ingresar</button>
+							</form>
+							<br />
+							<label class="check">
+								<input type="checkbox" checked="checked" name="remember"> Recuerdame
+							</label>
+							<a href="/forgotPassword">¿Olvidaste tu contraseña?</a>
+							<hr />
+							<p>¿No eres un Achiever? <a href="/register">Registrate</a>.</p>
+						</div>
+					</div>			
+				</div>
+			</div>
+					</div>
+				</div>			
+			</div>
+			<footer>
+				<p>Achievemind &#174. Todos los derechos reservados. Red social creada y auspiciada por Fedenoodt, para más contacto, hacer <a href="mailto:fedenoodtmolins@gmail.com" target="_blank">clic aquí</a>. Si afronta algún problema navegando en la red, por favor, contacte a soporte técnico desde <a href="mailto:fedenoodt.Achievemind@gmail.com" target="_blank">aquí.</a> <br />
+				Agradecemos mucho su visita a Achievemind, que le vaya bien.</p>
+			</footer>
+
+		</section>
+	</body>
+	</html>

@@ -1,0 +1,68 @@
+	10-11-2020_Martes:
+
+Bueno, la idea sería desarrollar así como primicia, una "Red social de logros", primero en principal, sería trivial, pensar en los detalles de que queremos que se pueda hacer en esa red social, y un poco la estetica que le queramos dar.
+Segundo habría que pensar en lo estetico, Nombre, decoración, formato de la página. Y por último, que necesitamos emplear para llevar esa red social a cabo.
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+
+En la red social, el usuario, debería si o si ingresar con usuario registrado, porque si no tiene usuario, no consta registro de sus logros. No me gusta mucho que la red social tenga solo logros, deberíamos pensar algo más para que tenga mas funcionalidades, y algo distinto a las reacciones que tienen toodas las redes sociales.
+Vos podes registrarte, empezar a anotar tus logros, quedar registrados en tu cuenta, ¿Y que devolución pueden dar los otros usuarios?
+Los logros podrían tener niveles, por ejemplo Aspiraciones, Proyectos, Metas, Logros, Logritos, de mayor a menor, y que el usuario pueda catalogar su logro.
+Con respecto a la devolución de usuario, la persona podría devolver una experiencia, con un mínimo de caracteres, y que a medida que esa experiencia tenga mas texto, sume una cantidad de puntaje, puntaje que después el usuario utilize para subir de nivel, y con ese nivel, tener un reconocimiento, y aún estoy pensamdo algún tipo de recompensa.
+Bueno, tenemos logros catalogados, devolucion de usuario, pero sigue sonando hueco. Respecto a las amistades, yo haría un sistema de seguidores, como tiene Instagram, Twitter, y otros. Otras personas podrian validar tu experiencia, y eso darte otro tipo de puntaje, todavía mas prestigioso, algo como "Popularidad", "Sabiduría", o "Reputación". Un tipo de "Trofeo" para quién valla subiendo su "Nivel general" que son los dos niveles fusionados, podria ser algo como los pases de batalla en Fortnite, ir desbloqueando distintos accesorios para tu perfil, como algo básico que son los colores o el fondo, a algo más avanzado, como muñequitos, por ejemplo.
+
+Bueno, dejemos por ahora las ideas de acciones en la red, y pasemos un poco a lo que es la imagen.
+Como toda imagen, es crítico el Nombre, y la "Imagen" del producto. Pensemos en un buen nombre para nuestra red...
+1)Achievemind 2)Lograzo 3)QuestLife 4)MouthonMouth 5)PeopleEXP Unas MM del nombre 4 en un trofeo de logo no quedaría mal 6)Life Experience 7)WiseSocial 8)HeKnows 9)Everyknows 10)SafeLife. Achievemind me gusta.
+La imagen podría ser algo sencillo, pragmatico, como una copa blanca, fondo bordó, y al frente la o las iniciales.
+La Página... La pagina podría tener el diseño tradicional de Facebook, si lo que importa siempre es el concepto, y no tanto la estetica, pero dando valor a la estetica, podríamos incluir a el inicio, una elección de fondos claro/oscuro, personalizado por el mismo diseño de la red.
+
+En todo esto, creo que nos alcanza con las utilidades de Django, los perfiles van en una base de datos, y lo montamos en una web html.
+
+_____________________________
+	12-11-2020_Jueves:
+	
+Bueno, el plantéo de la red esta genial, ahora, necesitamos estructurar la red, para los usuarios, posteos, devoluciones, bla bla bla.
+
+Antes de hablar de eso, quiero pautar lo obvio, vamos a hacer una red a prueba de balas, creando bots, y viendo que todo funcione como corresponde, y después, si todo sale como debe, reiniciamos la base de datos para subir la red en linea.
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+
+Vamos a plantear el problema de la web. Tenemos que registrar usuarios, que pueden hacer posteos, y a su vez, registrar comentarios, cada usuario tiene registrados logros, comentarios hacia uno, y un nivel. Un usuario tiene muchos logros, pero un logro puede tener un solo usuario. Un usuario puede tener muchos comentarios, pero un comentario puede tener un solo usuario.
+Ya podés empezar a usar el Draw.io.
+
+El Usuario puede registrar nombre, descripción, foto de perfil, y además se le pide un ID de usuario al ser creado.
+El nivel es el nivel, tiene que tener registrado el numero de mivel, preferentemente el nombre de nivel, eso hasta ahora, después analizamos el tema de la validación de desbloqueos.
+Los logros se tienen registrados a si mismos, "Logro", y una Foreign Key al usuario que lo registra, y su ID, y para comentarios, también, el comentario en si, una Foreign Key a el logro, y otra a el usuario, y su ID. 
+
+Ahora el problema que tenemos es que necesitamos pensar alguna relación con respecto a los seguidores y seguidos, el como hacer esa vinculación.
+
+Nada que ver, pero me acabo de percatar que los niveles, podrían estar asociados a otra tabla, con ID de los respectivos niveles, los cuales tengan registrados los desbloqueos para el perfil.
+
+A lo mejor solucionamos el problema de los seguidores con dos columnas extra "seguidores" y "seguidos", cuyas columnas hagan referencia a su misma tabla, con el ID en concreto, eso!
+
+Me inquieta pensar como vamos a resolver la cuestión de las direcciones, veremos.
+
+_____________________________
+	14-11-2020_Sabado:
+	
+Bien, habiendo resuelto el asunto de las conexiónes de seguidores/seguidos, Habiendo establecido la base de usuarios, y sus comentarios y logros adyacentes, tenemos que profundizar en asuntos como el muro, y que los comentarios tienen que si o si estar referidos a otra persona.
+
+Con todo esto, ya estaría formada la unidad básica.
+
+¡Ah! lo del vínculo Comentario/Logro ya estaba hecho.
+
+-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o
+
+OBJETIVOS: Desarrollar sistema de ingreso para el usuario corriente, y Muro.
+
+_____________________________
+	17-11-2020_Martes:
+	
+Bien, bien, asunto del ingreso sanjado, ahora sería muy importante establecer el contacto usuarios/base de datos. Difícil, pero no imposible. Hay que ver que elementos hacen falta, para hacer que ese registro de usuario, se siente en la base de datos.
+
+_____________________________
+	19-11-2020_Martes:
+	
+Bien, el armazón está casi completo.
+Antes de hacer enfasis, en lo que puede ser Front-End, detalles de la imagen de la web, entraría a mirar una estructura para unas vistas a el muro, y el perfil, y con eso empezar a avanzar.

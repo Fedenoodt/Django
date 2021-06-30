@@ -1,0 +1,23 @@
+	-Viernes_09-04-2021:
+
+Bueno, bien, estamos avanzando. El back-up está estable, ahora estamos viendo de conformar la estructura para recuperar la contraseña de usuario, trabajando con las urls.
+
+Nos estamos guiando con este patrón de busqueda: https://www.google.com/search?q=user+forgot+password+django&oq=user+forgot+password+django&aqs=chrome..69i57.14000j0j7&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+Y estamos leyendo las consignas de esta web: https://simpleisbetterthancomplex.com/tutorial/2016/09/19/how-to-create-password-reset-view.html
+
+	-Viernes 30-04-2021:
+
+Si bien logramos detectar que borrando las url's, remplazandolas por un path estándar, logramos correr el sistema, pero sin poder todavía hacer un limpio restablecimiento de contraseña.
+Muy probablemente, conforme a que los estilos y los HTML se vayan acomodando, logremos correr el sistema, no creo, pero es una posibilidad.
+
+	-Viernes 07-05-2021:
+	
+Bien, lo que vimos el 30 no llega a una solución que nosotros buscamos. Lo mejor es hacer una entrada por un template, seguramente desde JavaScript, y de ahi idear la autenticación de usuario, y el restablecimiento de contraseña.
+Además hay que arreglar los estilos del ingreso.
+
+	-Viernes 18-06-2021:
+
+Otra vez el mismo dilema. No. Lo mejor es, si planteamos un sistema en Django, hacer el sistema en Django, y dejar a los templates la tarea de representar ese sistema, sin más cuestiónes.
+
+Hoy la tarea, es reconocer una buena forma de poner al template ese sistema.

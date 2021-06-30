@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Achievemind | Iniciar sesión</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h2>Iniciar sesión</h2>
+	<form method="POST">
+		{{ form.as_p }}
+		{% csrf_token %}
+		<button type="submit">Ingresar</button>
+	</form>
+
+	<hr />
+	<a href="/register">Registrar usario</a>
+</body>
+</html>
