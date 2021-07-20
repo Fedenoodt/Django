@@ -1,0 +1,4 @@
+    -Dia #1: 20-07-2021_Martes:
+Hoy ordenamos este proyecto, en reemplazo de Achievemind, que va a ser demorado por algún tiempo, en cuestión de que necesitas saber mas sobre Django, y este proyecto, va a ser de gran utilidad para tomar cartas en el asunto, y construir una red mejorada para Grupote.
+
+Entrando en tema, encontré un toma fácil en YouTube de una persona que hace un Django para una universidad, ( https://www.youtube.com/watch?v=10_PpcLRaHk&ab_channel=Init ) puede ser buena idea empezár desde ahi.
