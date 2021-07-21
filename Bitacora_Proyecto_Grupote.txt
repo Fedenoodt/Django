@@ -8,3 +8,4 @@ Entrando en tema, encontré un toma fácil en YouTube de una persona que hace un
 Bien. Haciendo eso llegamos hasta el minuto 16:44 siguiendo los pasos, y repitiendo todo lo que estaba haciendo."
 Eso es lo que estuvimos tratando en el Proyecto Zero. Hoy lo tratamos desde acá.
 No. Este tipo es muy desordenado, encontré otra web que hace un paso a paso clarito y consiso ( https://magmax.org/blog/pasos-django/ ), vamos a reiniciar y probar desde ahi.
+Bien, después de revolotear como una mariposa un rato largo. Logramos deducir como vincular una web a un Proyecto Django, de ahora en más sigue hacer la mega-estructura para montar la base de Artículos vía template.

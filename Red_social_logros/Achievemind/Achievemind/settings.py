@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Achievemind.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/fedenoodt/Documentos/BHSIAI/Protocolo 6/GitHub/Django/Grupote/usuario/templates/usuario'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
