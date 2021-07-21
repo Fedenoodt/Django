@@ -2,3 +2,9 @@
 Hoy ordenamos este proyecto, en reemplazo de Achievemind, que va a ser demorado por algún tiempo, en cuestión de que necesitas saber mas sobre Django, y este proyecto, va a ser de gran utilidad para tomar cartas en el asunto, y construir una red mejorada para Grupote.
 
 Entrando en tema, encontré un toma fácil en YouTube de una persona que hace un Django para una universidad, ( https://www.youtube.com/watch?v=10_PpcLRaHk&ab_channel=Init ) puede ser buena idea empezár desde ahi.
+
+    -Dia #2: 21-07-2021_Miercoles:
+"Bueno, hoy podemos tomar la práctica del Proyecto Grupote y su video de elaboración de la web de la Universidad, como escusa para aprender sobre código ajeno.
+Bien. Haciendo eso llegamos hasta el minuto 16:44 siguiendo los pasos, y repitiendo todo lo que estaba haciendo."
+Eso es lo que estuvimos tratando en el Proyecto Zero. Hoy lo tratamos desde acá.
+No. Este tipo es muy desordenado, encontré otra web que hace un paso a paso clarito y consiso ( https://magmax.org/blog/pasos-django/ ), vamos a reiniciar y probar desde ahi.

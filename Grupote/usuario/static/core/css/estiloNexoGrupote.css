@@ -1,0 +1,49 @@
+* {
+	color: rgb(243,200,200);
+	align-self: center;
+	font-size: 26px;
+}
+
+body {
+	background-image: url("fondoGrupote.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1 {
+
+	font-size: 50px;
+	margin:0 0;
+	display: inline-block;
+}
+
+h3 {
+
+	font-size: 30px;
+	margin:0 0;
+	display: inline-block;
+}
+
+.back {
+	font-size: 35px;
+}
+
+
+.Emblema {
+	width: 300px;
+	margin: 15px;
+	border-radius: 10%;
+}
+
+.in-flex {
+	width: 700px;
+	height: 1000px;
+	background-color: rgba(64,133,190,0.8);
+	border-radius: 2%;
+	margin-bottom: 10px; 
+}
+
+.graficoEsquema {
+	width: 680px;
+}
