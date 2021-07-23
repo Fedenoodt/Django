@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grupote</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/estiloNexoGrupote.css' %}">
+	<meta charset="utf-8">
+</head>
+<body style='background-image:  url("{% static '/img/fondoGrupote.jpg' %}");'>
+	<center>
+		<section class="home">
+			<div class="in-flex">
+				<div id="header">
+					<a href="https://t.me/joinchat/SiyGQerVNMbJjwMk"><img class="Emblema" src="{% static 'img/emblemaGrupote.jpg' %}"></a><br>
+					<h1>Nexo Grupote</h1><br>
+					<h3>Una pragmática web de operaciones para el grupo familiar.</h3>
+				</div>
+				<hr />
+				<h2>Iniciar Sesión</h2>
+                    <div class="contnent">
+                        <form class="logCore" method="POST">
+                            {{ form.as_p }}
+                            {% csrf_token %}
+                            <button type="submit">Ingresar</button>
+                        </form>
+                        <br />
+                        <label class="check">
+                            <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                        </label>
+                    </div>
+				<hr />
+                <a class="back" href="entrada">Volver ↩</a>
+				<hr />
+			</div>
+		</section>
+	</center>
+</body>
+</html>
