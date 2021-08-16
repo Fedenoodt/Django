@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grupote</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/estiloAvanzado.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-image:  url('{% static "img/fondoGrupote.jpg" %}');">
+<section class="home">
+	<div class="in-flex">
+			<a href="https://t.me/joinchat/SiyGQerVNMbJjwMk"><img class="EmblemaRedondo" src="{% static 'img/emblemaGrupote.jpg' %}"></a><br>
+			<h1>Nexo Grupote</h1><br>
+			<h3>Una pragmática web de operaciones para el grupo familiar. </h3>
+		<hr />
+		<h3>Últimos artículos...</h3>
+            <div>
+                
+            </div>
+	</div>	
+	<div class="in-flex">
+		<div>
+		    <ul>
+		        <a href= "nuevoArticulo"><li>Crear artículo.</li></a>
+		        <a href= ""><li>Eliminar artículo.</li></a>
+		    </ul>
+		</div>
+		<div>pie
+		de
+		pagina</div>
+	</div>	
+</section>
+</body>
+</html> 

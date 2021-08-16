@@ -1,6 +1,7 @@
+{% load staticfiles %}
+
 * {
 	color: rgb(243,200,200);
-	align-self: center;
 	font-size: 26px;
 }
 
@@ -28,6 +29,10 @@ h3 {
 	font-size: 35px;
 }
 
+.linea {
+    margin-bottom: 15px;
+}
+
 
 .Emblema {
 	width: 300px;
@@ -35,9 +40,57 @@ h3 {
 	border-radius: 10%;
 }
 
-.in-flex {
+.EmblemaRedondo {
+    allign-self:left;
+	width: 150px;
+	margin: 15px;
+	border-radius: 60%;
+}
+
+.titulo {
+    
+}
+
+.Descripcion {
+    width: 600px;
+    height: 80px;
+    overflow: scroll;
+}
+
+.Contenido {
+    width: 600px;
+    height: 150px;
+    overflow: scroll;
+}
+
+.izquierda {
+	position: absolute;
+	top:10px;
+	left:10px;
 	width: 700px;
-	height: 1000px;
+	height: auto;
+	background-color: rgba(64,133,190,0.8);
+	border-radius: 2%;
+	margin-bottom: 10px; 
+}
+
+.centro {
+	position: absolute;
+	top:10px;
+	left:720px;
+	width: 700px;
+	height: auto;
+	background-color: rgba(64,133,190,0.8);
+	border-radius: 2%;
+	margin-bottom: 10px; 
+}
+
+.derecha {
+	position: absolute;
+	top:10px;
+	left:10px;
+	width: 700px;
+	height: auto;
 	background-color: rgba(64,133,190,0.8);
 	border-radius: 2%;
 	margin-bottom: 10px; 

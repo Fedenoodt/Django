@@ -10,6 +10,9 @@ from django.contrib.auth.forms import UserCreationForm
 def entradaGrupote(request):
 	return render(request, "usuario/entradaGrupote.html", {})
 
+def nexo(request):
+	return render(request, "usuario/nexoGrupote.html", {})
+
 def ingreso(request):				
 	form = AuthenticationForm()
 	if request.method == "POST":
@@ -20,8 +23,8 @@ def ingreso(request):
 			user = authenticate(username=username, password=password)
 			if user is not None:
 				do_login(request, user)
-				return redirect('/')
+				return redirect('nexo')
 	return render(request, "usuario/ingresoGrupote.html", {'form': form})
 
-def nexo(request):
-	return render(request, "usuario/nexoGrupote.html", {})
+def nuevoArticulo(request):
+	return render(request, "usuario/cargarArticulo.html", {})

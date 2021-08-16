@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grupote</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/estiloNexoGrupote.css' %}">
+	<meta charset="utf-8">
+</head>
+<body style="background-image:  url('{% static "img/fondoGrupote.jpg" %}');">
+	<center>
+		<section class="home">
+			<div class="centro">
+				<div id="header">
+					<a href="https://t.me/joinchat/SiyGQerVNMbJjwMk"><img class="Emblema" src="{% static 'img/emblemaGrupote.jpg' %}"></a><br>
+					<h1>Nexo Grupote</h1><br>
+					<h3>Una pragmática web de operaciones para el grupo familiar.</h3>
+				</div>
+    			<hr />
+	                
+				<h2>Crear un artículo.</h2>
+				<p class="descripcionNexo">Para crear un artículo, lo único que tenés que hacer, es registrar los datos (Muy importante que declares el autor, así sabemos quién fue), agregar archivos de ser necesario, y darle a "subir". Así de simple.
+				</p>
+				<hr />
+				<h3>Título</h3><br />
+				<input type = "text"></input><br />
+				<h3>Autor</h3><br />
+				<input type = "text"></input><br />
+				<h3>Descripción</h3><br />
+				<input class = "Descripcion" type = "text"></input><br />
+				<h3>Contenido</h3><br />
+				<input class = "Contenido" type = "text"></input><br /><br />
+				<input type = "file"></input><br /><br />
+				<button type = "submit">Subir</button><br />
+				<hr />
+				<a class="back" href="nexo">Volver ↩</a>
+			</div>
+		</section>
+	</center>
+</body>
+</html>

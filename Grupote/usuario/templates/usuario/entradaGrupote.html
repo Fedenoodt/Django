@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,16 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/estiloNexoGrupote.css' %}">
 	<meta charset="utf-8">
 </head>
-<body style='background-image:  url("{% static '/img/fondoGrupote.jpg' %}");'>
+<body style="background-image:  url('{% static "img/fondoGrupote.jpg" %}');">
 	<center>
 		<section class="home">
-			<div class="in-flex">
+			<div class="centro">
 				<div id="header">
 					<a href="https://t.me/joinchat/SiyGQerVNMbJjwMk"><img class="Emblema" src="{% static 'img/emblemaGrupote.jpg' %}"></a><br>
 					<h1>Nexo Grupote</h1><br>
 					<h3>Una pragmática web de operaciones para el grupo familiar.</h3>
 				</div>
-				<hr />
+    			<hr />
+	                
 				<h2>¿Como funciona el Nexo Grupote?</h2>
 				<p class="descripcionNexo">El nexo cuenta con un par de funcionalidades útiles, en objetivo de poder almacenar información, de la forma mas accesible.
 					Ahora se puede:
@@ -26,8 +27,7 @@
 				</p>
 				<hr />
 				<hr />
-				<a href="ingreso"><h3 class="back">Ir al nexo.</h3></a>
-				<hr />
+				<a href="https://fedenoodt.000webhostapp.com/Pruebas/ingresoGrupote.html"><h3 class="back">Ir al nexo.</h3></a>
 			</div>
 		</section>
 	</center>

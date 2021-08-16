@@ -1,0 +1,79 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	color: rgb(243,200,200);
+	font-size: 26px;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.home {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.in-flex {
+	flex: 1;
+	min-width: 225px;
+	border-radius: 2%;
+}
+.in-flex:first-child {
+	flex: 2;
+	padding: 25px;
+	background-color:  rgba(64,133,190,0.8);
+	margin: 20px;
+	margin-bottom: 0px;
+	border-radius: 2%;
+}
+
+.in-flex div {
+	padding: 25px;
+	background-color:  rgba(64,133,190,0.8);
+	margin: 20px;
+	border-radius: 2%;
+
+}
+
+h1 {
+
+	font-size: 50px;
+	margin:0 0;
+	display: inline-block;
+}
+
+h3 {
+
+	font-size: 30px;
+	margin:0 0;
+	display: inline-block;
+}
+
+.back {
+	font-size: 35px;
+}
+
+.linea {
+    margin-bottom: 15px;
+}
+
+
+.Emblema {
+	width: 300px;
+	margin: 15px;
+	border-radius: 10%;
+}
+
+.EmblemaRedondo {
+    allign-self:left;
+	width: 200px;
+	margin: 15px;
+	border-radius: 45%;
+}
+
+.titulo {
+    
+}
