@@ -57,6 +57,14 @@ h3 {
     overflow: scroll;
 }
 
+.in-flex {
+	width: 700px;
+	height: 1000px;
+	background-color: rgba(64,133,190,0.8);
+	border-radius: 2%;
+	margin-bottom: 10px; 
+}
+
 .Contenido {
     width: 600px;
     height: 150px;
@@ -71,18 +79,14 @@ h3 {
 	height: auto;
 	background-color: rgba(64,133,190,0.8);
 	border-radius: 2%;
-	margin-bottom: 10px; 
+	margin: 20px;
+	margin-bottom: 0px; 
 }
 
 .centro {
-	position: absolute;
-	top:10px;
-	left:720px;
-	width: 700px;
-	height: auto;
 	background-color: rgba(64,133,190,0.8);
-	border-radius: 2%;
-	margin-bottom: 10px; 
+	margin: 20px;
+	margin-bottom: 0px; 
 }
 
 .derecha {
@@ -93,7 +97,8 @@ h3 {
 	height: auto;
 	background-color: rgba(64,133,190,0.8);
 	border-radius: 2%;
-	margin-bottom: 10px; 
+	margin: 20px;
+	margin-bottom: 0px; 
 }
 
 .graficoEsquema {
